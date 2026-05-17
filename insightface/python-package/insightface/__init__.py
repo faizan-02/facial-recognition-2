@@ -15,7 +15,7 @@ __version__ = '0.7.3'
 
 from . import model_zoo
 from . import utils
-from . import app
+# NOTE: Avoid importing app here to prevent optional Cython deps at import time.
 from . import data
 from . import thirdparty
 

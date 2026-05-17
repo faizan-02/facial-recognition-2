@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent
 INSIGHTFACE_PKG = ROOT / "insightface" / "python-package"
 sys.path.insert(0, str(INSIGHTFACE_PKG))
 
-from insightface.app import FaceAnalysis
+from insightface.app.face_analysis import FaceAnalysis
 
 UPLOADS_DIR = ROOT / "uploads"
 UPLOADS_DIR.mkdir(parents=True, exist_ok=True)

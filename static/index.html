@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightFace Demo</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="brand">
+            <div class="logo">IF</div>
+            <div>
+                <h1>InsightFace Demo</h1>
+                <p>CPU-only face detection and comparison</p>
+            </div>
+        </div>
+        <div class="note">
+            First run downloads models automatically and can take a few minutes.
+        </div>
+    </header>
+
+    <main class="grid">
+        <section class="card">
+            <h2>Detect Faces</h2>
+            <p>Upload an image to detect faces and see bounding boxes.</p>
+            <input type="file" id="detect-file" accept="image/*">
+            <button id="detect-btn">Detect</button>
+            <div id="detect-result" class="result" hidden></div>
+            <img id="detect-image" class="preview" hidden>
+        </section>
+
+        <section class="card">
+            <h2>Compare Two Faces</h2>
+            <p>Upload two images to see if they match.</p>
+            <div class="stack">
+                <input type="file" id="compare-a" accept="image/*">
+                <input type="file" id="compare-b" accept="image/*">
+            </div>
+            <button id="compare-btn">Compare</button>
+            <div id="compare-result" class="result" hidden></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by InsightFace | ONNX Runtime CPU</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

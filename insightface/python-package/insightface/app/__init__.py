@@ -1,2 +1,2 @@
 from .face_analysis import *
-from .mask_renderer import *
+# NOTE: mask_renderer requires optional Cython extensions; avoid importing by default.

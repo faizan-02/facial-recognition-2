@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python demo_analysis.py --ctx -1)",
+      "Bash(python:*)"
+    ]
+  }
+}
